@@ -1,22 +1,18 @@
 version: '3'
 services:
-  tarin:
+  train:
     image: santhi25/phonepaytrain:v1
     ports:
-      - "8005:80"
-    deploy:
-      replicas: 3
-
+      - "8000:80"
+    
   movie:
     image: santhi25/phonepaymovie:v1
     ports:
-      - "8006:80"
-    deploy:
-      replicas: 3
+      - "8001:80"
+    
       
   recharge:
     image: santhi25/phonepayrecharge:v1
     ports:
-      - "8007:80"
-    deploy:
-      replicas: 3
+      - "8002:80"
+    
